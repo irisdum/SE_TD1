@@ -27,8 +27,8 @@ public interface Heap<E> extends Iterable<E> {
     E popElement();
 
     /** Returns true if this heap contains no elements. */
-    boolean isEmpty();
+   // boolean isEmpty();
 
     /** Returns the number of elements contained in this heap */
-    int size();
+    //int size();
 }
