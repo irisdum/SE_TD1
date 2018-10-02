@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8589597a-7fd7-430c-9a26-5e24ae3b9605" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/heap/Itr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/heap/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/heap/Heap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/heap/Iterable.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/heap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/heap/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/heap/SortedHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/heap/SortedHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/heapTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,35 +17,38 @@
     <session id="-1367555844">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.58" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.93" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="7" />
+          <entry key="java" value="8" />
           <entry key="part" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="8" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2617" />
+          <entry key="java" value="3756" />
+          <entry key="txt" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2617" />
+          <entry key="JAVA" value="3756" />
+          <entry key="PLAIN_TEXT" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -65,46 +63,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/heap/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="195">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/heap/SortedHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="81" column="45" lean-forward="true" selection-end-line="81" selection-end-column="76" />
+            <state relative-caret-position="179">
+              <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#2028#2029#0" expanded="true" />
-                <element signature="e#2063#2064#0" expanded="true" />
-                <element signature="e#2096#2097#0" expanded="true" />
-                <element signature="e#2124#2125#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#2930#2931#0" expanded="true" />
+                <element signature="e#2955#2956#0" expanded="true" />
+                <element signature="e#2986#2987#0" expanded="true" />
+                <element signature="e#3014#3015#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Bnttd8_F.exe.part">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/heap/Heap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="510">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -138,10 +124,10 @@
         <option value="$PROJECT_DIR$/src/com/company/Iterable.java" />
         <option value="$PROJECT_DIR$/src/com/company/Heap.java" />
         <option value="$PROJECT_DIR$/src/com/company/SortedHeap.java" />
-        <option value="$PROJECT_DIR$/src/com/company/heap/Heap.java" />
-        <option value="$PROJECT_DIR$/src/com/company/heap/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/heap/Itr.java" />
         <option value="$PROJECT_DIR$/src/com/company/heap/Iterable.java" />
+        <option value="$PROJECT_DIR$/src/com/company/heap/Heap.java" />
+        <option value="$PROJECT_DIR$/src/com/company/heap/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/heap/SortedHeap.java" />
       </list>
     </option>
@@ -153,7 +139,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
+    <option name="x" value="17" />
     <option name="y" value="23" />
     <option name="width" value="1260" />
     <option name="height" value="693" />
@@ -163,9 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,12 +176,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538144448083" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538507938563" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -254,18 +240,27 @@
       <workItem from="1537967175073" duration="3836000" />
       <workItem from="1537978369157" duration="1470000" />
       <workItem from="1538059913330" duration="711000" />
-      <workItem from="1538138157080" duration="5284000" />
+      <workItem from="1538138157080" duration="6024000" />
+      <workItem from="1538504676577" duration="3193000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;Commit v2 : création de l'iterator dans SortedHeap&quot;">
+      <created>1538144523363</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538144523363</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15979000" />
+    <option name="totallyTimeSpent" value="19912000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="23" width="1260" height="693" extended-state="0" />
+    <frame x="17" y="23" width="1260" height="693" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26600984" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27011493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -274,7 +269,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294509" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -283,7 +278,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.3294509" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3294509" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -302,66 +297,46 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="&quot;Commit v2 : création de l'iterator dans SortedHeap&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Commit v2 : création de l'iterator dans SortedHeap&quot;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/heap/Itr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/heap/Iterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/heapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/heap/Iterable.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/heapTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/heap/Itr.java" />
     <entry file="file://$USER_HOME$/Downloads/Bnttd8_F.exe.part">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
+        <state relative-caret-position="750">
           <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/heap/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/heap/SortedHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="81" column="45" lean-forward="true" selection-end-line="81" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2063#2064#0" expanded="true" />
-            <element signature="e#2096#2097#0" expanded="true" />
-            <element signature="e#2124#2125#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/heap/Heap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/heap/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/heap/SortedHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+          <folding>
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
+            <element signature="e#2955#2956#0" expanded="true" />
+            <element signature="e#2986#2987#0" expanded="true" />
+            <element signature="e#3014#3015#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
