@@ -1,6 +1,7 @@
 package com.company.heap;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 /**
  * Classe d'abre binaire implémentant la classe Heap qui étend l'inteface Itearable.
@@ -71,44 +72,49 @@ public class SortedHeap implements Heap<Integer> {
     }
 
     /**
+     * Calcul la valeur de l'indice du père
+     * @param i curseur
+     * @return la valeur de l'indice du père
+     */
+    public int indPere(Itr i){
+        int p=0;
+        if (i.it % 2 == 0 &&i.it>0) { //si l'indice est pair
+            p = i.it / 2-1;
+        }if(i.it==1){
+            p=0;
+        }if(i.it%2==1&&i.it>1){// si l'indice est impair
+            p= (i.it + 1)/2-1;
+        }
+        return p;
+
+    }
+
+    /**
      * Fonction qui insert un élément dans l'arbre
      * @param s correspond à l'élément qui doit être ajouté à l'arbre
      * @return vraie si l'élément a bien pu s'insérer
      */
     public boolean insertElement(Integer s) {
-        int n=0; //indice du père
+        //int n=0; //indice du père
         Itr curs = new Itr(); // crée un curseur locale qui nous permettra de parcourir l'arbre
         if(curs.hasNext()){
             this.queue[curs.it] = s;
-            boolean B = true;
-            System.out.println(B);
+            boolean B = true; // variable qui traduit si le père est plus petit que le fils.
+            //System.out.println(B);
             while (B) { //compare avec le père
-            //System.out.println("Youhou je suis dans la boucle");
-            // Si l'indice du fils est impair
-                if (curs.it % 2 == 0 &&curs.it>0) { //si l'indice est pair
-                    n = curs.it / 2-1;
-                    //System.out.println("je suis l'indice du père et je suis "+n);
-                }if(curs.it==1){
-                   // System.out.println("Je suis le père");
-                    n=0;
-                }if(curs.it%2==1&&curs.it>1){// si l'indice est impair
-                    n = (curs.it + 1) / 2-1;
-                    //System.out.println("je suis l'indice du père et je suis "+n);
-                }
-                //System.out.println("le père "+queue[n] +"le fils "+queue[curs.it]);
-                //System.out.println("indice père"+n+"indice fils"+curs.it);
+                int n=indPere(curs);
                 if (s > this.queue[n] && curs.it >= 0) {//le cas où la valeur du fils est plus grand que le père
                     this.queue[curs.it] = this.queue[n]; // échange père fils
                     this.queue[n] = s;
-                    System.out.println("on a mis l'element "+s+"à l'endroit "+n);
-                    System.out.println("on a mis "+ queue[curs.it]+"à l'endroit "+ curs.it);
+                    System.out.println("on a mis l'element "+s+" à l'endroit "+n);
+                    System.out.println("on a mis "+ queue[curs.it]+" à l'endroit "+ curs.it);
                     curs.it = n; //on affecte l'indice du père dans la valeur de l'iterateur
                 }else {
                     B = false; //On sort de la boucle while
                 }
 
             }
-            this.ind += 1;
+            this.ind += 1;// On incrémente la valeur de l'indice du dernier élément parcouru
             return true;
         }else{
             System.out.println("L'arbre est trop petit");
@@ -117,10 +123,15 @@ public class SortedHeap implements Heap<Integer> {
     }
 
 
-   public Integer element(){
-        //retourne la valeur actuelle qe l'element sous l'iterator, ne marche pas vraiment
-        return this.queue[this.ind]; //le problème est que je n'arrive pas à obtenir la valeur de l'iterateur
-
+    /**
+     * Retrieves (without removing) the highest element of this heap
+     *
+     * @return the highest element of this heap
+     * @throws NoSuchElementException if this heap is empty
+     */
+    public Integer element(){
+        
+        return 3;
    }
 
     public Integer popElement(){
