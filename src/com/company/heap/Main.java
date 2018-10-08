@@ -9,7 +9,7 @@ public class Main {
         //création du tableau
 
         SortedHeap H = new SortedHeap(13);
-        for(int i=0;i<10;i++){
+        for(int i=0;i<5;i++){
             H.insertElement(i);
         }
         //System.out.println(H.element());
