@@ -1,26 +1,27 @@
 package com.company.heap;
 
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 /**
  * Classe d'abre binaire implémentant la classe Heap qui étend l'inteface Itearable.
  */
 
-public class SortedHeap implements Heap<Integer> {
+public class SortedHeap implements Heap<Integer>  {
         protected int ind;
         // indice du dernier fils
         protected int size;
         protected Integer queue[];
+        public myComparator comp;
 
     /**
      * Constructeur de la classe SortedHeap
      * @param  cap capacité maximale de l'objet SortedHeap
      */
-    public SortedHeap (int cap){
+    public SortedHeap (int cap, myComparator comparator){
         this.size=cap;
         this.ind=0; //Dernier indice parcourue
         this.queue=new Integer[cap];
+        this.comp=comparator;
     }
 
     /**
@@ -50,11 +51,7 @@ public class SortedHeap implements Heap<Integer> {
          * @return un bolléen : vraie si il existe un element suivant, faux sinon
          */
         public boolean hasNext () {
-            if (this.it+1>size) {
-                return false;
-            } else{
-                return true;
-            }
+            return this.it + 1 <= size;
         }
 
         /**
@@ -103,7 +100,7 @@ public class SortedHeap implements Heap<Integer> {
             //System.out.println(B);
             while (B) { //compare avec le père
                 int n=indPere(curs);
-                if (s > this.queue[n] && curs.it >= 0) {//le cas où la valeur du fils est plus grand que le père
+                if (this.comp.compare(s,this.queue[n])>0 && curs.it >= 0) {//le cas où la valeur du fils est plus grand que le père
                     this.queue[curs.it] = this.queue[n]; // échange père fils
                     this.queue[n] = s;
                     System.out.println("on a mis l'element "+s+" à l'endroit "+n);
@@ -130,15 +127,94 @@ public class SortedHeap implements Heap<Integer> {
      * @throws NoSuchElementException if this heap is empty
      */
     public Integer element(){
-        
-        return 3;
-   }
-
-    public Integer popElement(){
-        return  2;
+        if (! isEmpty()){
+        return this.queue[0];
+        }
+        else{
+            throw new NoSuchElementException();
+        }
     }
+    public Integer nbNiveau(int n){
+        boolean B= true;
+        int k=0;
+        while(k<n){
+            if(n>(Math.pow(2,k)) && n<Math.pow(2,k+1)){
+                return k;
+            }else k=k+1;
+        }
+        return null;
+    }
+
+    /**
+     * Fonction qui determine l'indice du plus grand fils, si il n'a pas de fils retourne son propre indice
+     * @param p correspon à l'indice du père
+     * @return l'indice du plus grand des deux fils et si il n'a pas de fils, retourne l'indice du père
+     */
+    public Integer indFils(int p){
+            if (p != 0) {
+                if (2*(p+1)==this.ind) {//2p+2 correspond a l'indice du dernier fils du père d'indice p
+                    return 2 * p+1;
+                }
+                System.out.println("indice " + 2 * p);
+                if (! this.comp.higher(this.queue[2 * p + 2],this.queue[2 * p+1])) { // Le fils 2p+2 plus petit que 2p+1
+                    return 2 * p+1;
+                } else {
+                    return 2 * p + 2;
+                }
+            } else {//cas p=0
+                if (this.comp.higher(this.queue[1],this.queue[2])) {
+                    return 1;
+                } else {
+                    return 2;
+                }
+            }
+    }
+
+    /**
+     * Indique si le père d'indice p a un fils
+     * @param p indice du père
+     * @return faux si il n'a pas de fils
+     */
+    public boolean hasSon(int p){
+        return 2 * p + 1 < this.ind;
+    }
+
+    /**
+     * Retrieves (and remove) the highest element of this heap
+     *
+     * @return the highest element of this heap
+     * @throws NoSuchElementException if this heap is empty
+     */
+
+    public Integer popElement(){ //problème je n'arrive pas à faire de copie profonde
+        boolean B=true;
+        int m=0;
+        ArrayList <Integer> val=new ArrayList<Integer>(1);
+        //val.add(this.queue[0]);
+        //ArrayList<Integer> queue2=new List<Integer>(this.queue);
+        //int high=queue[0];//on va modifier l'arbre, on copie la valeur du plus haut
+        if(!this.isEmpty()){
+            while(hasSon(m)){// la boucle doit tourner tant que le fils étudié a une descendance
+                //if (m< this.ind){//this.ind correspond à l'indice du dernier fils ajouté+1 on pourrait utiliser la méthode hasnext
+                this.queue[m]=this.queue[this.indFils(m)];
+                m=this.indFils(m);
+                System.out.println("Je suis dans le if");
+            //}
+        }
+        return this.queue[0];
+        }else throw new NoSuchElementException();
+
+    }
+
+    /**
+     * Indique si l'arbre est vide
+     * @return un boléen vrai si l'arbre est vide
+     */
     public boolean isEmpty() {
+        if (this.ind>0){ // dès qu'un élément est ajouté this.ind est incrémenté de un
         return false;
+    }else{
+        return true;
+        }
     }
 }
-//Il reste à compléter les fonctions element,popelement et boolean isEmpty()

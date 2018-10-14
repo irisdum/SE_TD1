@@ -28,7 +28,6 @@ public interface Heap<E> extends Iterable<E> {
 
     /** Returns true if this heap contains no elements. */
    // boolean isEmpty();
-
     /** Returns the number of elements contained in this heap */
     //int size();
 }
