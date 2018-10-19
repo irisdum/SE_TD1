@@ -217,8 +217,9 @@ public class SortedHeap implements Heap<Integer>  {
                m = this.indFils(m);
 
            }
-           Integer max=new Integer(queue[m]);
-           queue[m]=-1; // j'ai supposé que je ne rentrais que des entiers strictement positifs, mettre notre borne inf-1
+           Integer max;
+           max = this.queue[m];
+           this.queue[m]=-1; // j'ai supposé que je ne rentrais que des entiers strictement positifs, mettre notre borne inf-1
            //this.ind=this.ind-1; //On réduit le nombre d'élément inséré dans la liste de 1
            // System.out.println("indice du fils a explorer"+m);
            //System.out.println("indice max "+this.ind);
@@ -244,15 +245,14 @@ public class SortedHeap implements Heap<Integer>  {
      * On retourne la liste des elements dans l'ordre de priorite
      * @return l'element le plus prioritaire
      */
-    public ArrayList<Integer> Prioritaire(){ //Ne marche pas, une certaine valeur est répétée de nombreuses fois
+    public ArrayList<Integer> prioritaire(){
         ArrayList<Integer> Prio=new ArrayList<Integer>(this.size);
         Itr curs=new Itr();
-        int k=0; //On initialise le compteur à zero
-        while(k<this.ind-1){
-            System.out.println("indice"+k);
+        curs.it=0; //On initialise le compteur à zero
+        while(curs.it<this.ind){
+            //System.out.println("indice"+curs.it);
             Prio.add(this.popElement());
-
-            k=k+1;
+            curs.next();
         }
 
         return Prio;
